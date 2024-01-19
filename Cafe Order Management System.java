@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 class Main {
-    // first lets declare our variables for prices of food items
     int frenchFries = 100;
     int burger = 120;
     int pastry = 100;
@@ -15,8 +14,7 @@ class Main {
     String again;
     Scanner sc = new Scanner(System.in);
 
-    // lets create a method for displaing our food menu
-    // I've tried to make it look beautiful :)
+    
     public void displayMenu() {
         System.out.println("**************** Welcome To our Cafe ");
 
@@ -32,10 +30,7 @@ class Main {
         System.out.println(" 8.Exit ");
 
         System.out.println(" What Do you Want to Order Today??");
-    }// Our Food Menu is ready
-     // let's create a method to oreder a food item
-     // I'am using Swich case for this
-     // we need a method to generate bill
+    }
 
     public void generateBill() {
         System.out.println();
@@ -49,56 +44,56 @@ class Main {
             System.out.print("Enter Your Choice ");
             ch = sc.nextInt();
             switch (ch) {
-                case 1:// French Fries
+                case 1:
                     System.out.println("You have Selected French Fries");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * frenchFries;
                     break;
-                case 2:// Burger
+                case 2:
                     System.out.println("You have Selected Burger");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * burger;
                     break;
-                case 3:// Pastry
+                case 3:
                     System.out.println("You have Selected Pastry");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * pastry;
                     break;
-                case 4:// Cold Drinks
+                case 4:
                     System.out.println("You have Selected Cold Drinks");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * coldrink;
                     break;
-                case 5:// Cold Coffee
+                case 5:
                     System.out.println("You have Selected Cold Coffee");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * coldCoffee;
                     break;
-                case 6:// Pizza
+                case 6:
                     System.out.println("You have Selected Pizza");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * pizza;
                     break;
-                case 7:// Iced Tea
+                case 7:
                     System.out.println("You have Selected Iced Tea");
                     System.out.println();
                     System.out.println("Enter the desiered Quantity");
                     quantity = sc.nextInt();
                     total = total + quantity * icedtea;
                     break;
-                case 8:// exit
+                case 8:
                     System.exit(1);
                     break;
                 default:
@@ -122,6 +117,6 @@ class Main {
         Main fo = new Main();
         fo.displayMenu();
         fo.order();
-        // lets compile and test
+        
     }
 }
